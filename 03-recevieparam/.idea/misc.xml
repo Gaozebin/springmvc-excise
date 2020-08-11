@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../01-springmvc-helloworld" />
+    <file type="web" url="file://$PROJECT_DIR$/../02-requestmapping" />
+    <file type="web" url="file://$PROJECT_DIR$" />
+    <file type="web" url="file://$PROJECT_DIR$/../04-return" />
+    <file type="web" url="file://$PROJECT_DIR$/../05-url-pattern" />
+    <file type="web" url="file://$PROJECT_DIR$/../06-path" />
+    <file type="web" url="file://$PROJECT_DIR$/../08-forward-redirect" />
+    <file type="web" url="file://$PROJECT_DIR$/../09-exception-handler" />
+    <file type="web" url="file://$PROJECT_DIR$/../09-exception-handler(1)" />
+    <file type="web" url="file://$PROJECT_DIR$/../10-interceptor" />
+    <file type="web" url="file://$PROJECT_DIR$/../BaiduNetdiskDownload/05-SpringMVC/源码/07-ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/../BaiduNetdiskDownload/05-SpringMVC/源码/ch07-ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/../ch07-ssm" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../01-springmvc-helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/../02-requestmapping/pom.xml" />
+        <option value="$PROJECT_DIR$/../04-return/pom.xml" />
+        <option value="$PROJECT_DIR$/../05-url-pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/../06-path/pom.xml" />
+        <option value="$PROJECT_DIR$/../BaiduNetdiskDownload/05-SpringMVC/源码/07-ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/../ch01-ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/../BaiduNetdiskDownload/05-SpringMVC/源码/ch07-ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/../08-forward-redirect/pom.xml" />
+        <option value="$PROJECT_DIR$/../ch09-exception-handler/pom.xml" />
+        <option value="$PROJECT_DIR$/../09-exception-handler/pom.xml" />
+        <option value="$PROJECT_DIR$/../10-interceptor/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="11.0.6" project-jdk-type="JavaSDK" />
+</project>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ch07-ssm (1) (com.bjpowernode):war">
+    <output-path>$PROJECT_DIR$/../BaiduNetdiskDownload/05-SpringMVC/源码/ch07-ssm/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ch07-ssm (1) (com.bjpowernode)</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ch07-ssm-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ch07-ssm (1) (com.bjpowernode):war exploded" />
+    </root>
+  </artifact>
+</component>
