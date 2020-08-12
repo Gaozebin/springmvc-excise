@@ -1,0 +1,46 @@
+   2）在你的页面中的，访问地址加 "/"
+      访问的是： http://localhost:8080/ch06_path/index.jsp
+      路径： http://localhost:8080/ch06_path/
+		资源： index.jsp
+		点击 /user/some.do, 访问地址变为 http://localhost:8080/user/some.do
+		参考地址是 你的服务器地址，也就是 http://localhost:8080/
+		如果你的资源不能访问，加入${pageContext.request.contextPath}
+		<a href="${pageContext.request.contextPath}/user/some.do">发起user/some.do的get请求</a>
+===================================================================
+06-path:解决jsp页面中的路径问题， 用"/" 还是不用
+
+
+
+在jsp，html中使用的地址，都是在前端页面中的地址，都是相对地址
+
+地址分类：
+1、绝对地址，带有协议名称的是绝对地址，http：//www.baidu,com, ftp://202.122.23.1
+2、相对地址，没有协议开头的，例如： user/some.do ， /user/some.do
+            相对地址不能独立使用，必须有一个参考地址。通过参考地址，相对地址本身才能指定资源
+             张三同学，1班有张三，2班也有张三
+
+3、参考地址
+    在你的页面中的，访问地址不加 “/”
+    访问的是：http://localhost:8080/06_path/inde.jsp
+    路径：http://localhost:8080/06_path/
+    资源：index.jsp
+
+    在index.jsp发起 user/some.do请求，访问地址变为 http://localhost:8080/06_path/user/some.do
+    当你的地址没有斜杠开头，例如 user/some.do ，当你点击连接时，访问地址时当前页面的地址
+    加上链接的地址。
+    http://localhost:8080/06_path/ + user/some.do
+--------------------------------------------------------
+   index.jsp 访问 user/some.do , 返回后现在的地址：http://localhost:8080/06_path/user/some.do
+   http://localhost:8080/06_path/user/some.do
+   路径：http://localhost:8080/06_path/user/
+   资源：   some.do
+
+   在index.jsp在 user/some.do,就变为 http://localhost:8080/06_path/user/user/some.do（地址会变）
+   解决方案：
+   1、加入${pageContext.request.contextPath}
+   2、加入一个base标签，是html语言中的标签。表示当前页面中访问地址的基地址。
+        你的页面中所有 没有“/”开头的地址，都是以base标签中的地址为参考地址
+        使用base中的地址 + user/some.do
+
+    如果你的资源不能访问: 加入${pageContext.request.contextPath}
+    <a href="${pageContext.request.contextPath}/user/some.do">发起user/some.do的get请求</a>
