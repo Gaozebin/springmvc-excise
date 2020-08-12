@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="03-recevieparam" />
+        <module name="01-springmvc-helloworld" />
+        <module name="02-requestmapping" />
+        <module name="04-return" />
+        <module name="03-recevieparam (1)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="01-springmvc-helloworld" target="1.8" />
+      <module name="02-requestmapping" target="1.8" />
+      <module name="03-recevieparam" target="1.8" />
+      <module name="03-recevieparam (1)" target="1.8" />
+      <module name="04-return" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

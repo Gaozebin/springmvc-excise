@@ -1,0 +1,25 @@
+05-url-pattern：研究中央调度器的url-pattern设置为“/”
+
+发起的请求是由哪些服务器程序处理的。
+http://localhost:8080/05_url_pattern/index.jsp: tomcat（jsp会转为servlet）
+http://localhost:8080/05_url_pattern/js/jquery-3.4.1.js:tomcat
+http://localhost:8080/05_url_pattern/images/p1.jpg：tomcat
+http://localhost:8080/05_url_pattern/html/test.html：tomcat
+http://localhost:8080/05_url_pattern/some.do：DispatcherServlet（springmvc框架处理的）
+
+tomcat本身能处理静态资源的访问，像html，图片，js文件都是静态资源
+
+tomcat的web.xml文件有一个servlet 名称是 default ， 在服务器启动时创建的。
+ <servlet>
+        <servlet-name>default</servlet-name>
+        <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
+        <init-param>
+            <param-name>debug</param-name>
+            <param-value>0</param-value>
+        </init-param>
+        <init-param>
+            <param-name>listings</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
